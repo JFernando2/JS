@@ -1,0 +1,43 @@
+﻿GIT COMANDOS
+git --version | Verifica se o git está instalado na maquina
+
+Configuração do Sistema para envio do commit
+git config --global user.name "Juliano Martins" | Define o usuário
+git config --global user.email "juliano.cmartins@hotmail.com" | Define Email
+git config --global core.editor vscode | Define editor de texto
+
+Iniciar o repositório
+git init
+git status | Faz a varredura na pasta (Se teve alteração, etc...)
+git add README.txt | Adiciona o arquivo individual no git
+***1***git add -A | Adiciona todos os arquivos no git
+
+Comitando após realizar a ADD
+***2***git commit -m "Primeiro Commit" | Fazendo o commit
+git log | Verificar todos os commits da branch
+
+Github
+//Criar um repositório Local
+git remote add origin https://github.com/julianoomartins/testedehoje.git
+git push origin master | manda para o servidor
+git fetch | Ajusta o servidor com o local mas não atualiza
+git push origin :teste | Deleta uma branch
+***3***git pull origin master | Puxa todas as infos do github para o PC local
+
+Alterações em Branch
+git branch | Verifica todas as branchs
+git branch teste | Adicionando novo Branch
+git checkout teste | Mudando de branch
+git checkout HEAD -- teste | Muda somente o arquivo específico
+git diff | Verifica as alterações que foram feitas
+git diff --name-only | Verifica qual arquivo foi modificado
+git diff teste | Verifica o que foi modificado no aquivo específico
+
+Indo para a versão
+git reset --soft | Volta com as modificações que não foram comitados
+git reset --mixed | Volta com as modificações porem tem que dar o ADD
+git reset --hard | Volta completamente para o momento do commit anterior
+
+
+Gerando a KEY
+https://docs.github.com/en/enterprise/2.15/user/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
